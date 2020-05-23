@@ -25,6 +25,19 @@ If changing to a different TERRARIA_HOME simply change the part of the script th
 
         TERRARIA_HOME='/wd/terraria'
 
+Built and tested on Ubuntu 20.04 server
+
+Script will use 
+
+    #!/bin/bash
+        GNU bash, version 5.0.16(1)-release (x86_64-pc-linux-gnu)
+        
+    unzip
+        UnZip 6.00 of 20 April 2009, by Debian. Original by Info-ZIP.
+    
+    awk
+        GNU Awk 5.0.1, API: 2.0 (GNU MPFR 4.0.2, GNU MP 6.2.0)
+        
 ## Script procedure
 1. File and permission checking
 1. Cleanup directories to help consistancy of each run
@@ -41,7 +54,7 @@ If changing to a different TERRARIA_HOME simply change the part of the script th
 ## Directory Tree
 Result of tree command
         
-        me@mine:tree /wd/terraria
+        me@mine:/$ tree /wd/terraria
         
 ![directory tree](terraria_server_tree.GIF)
 
