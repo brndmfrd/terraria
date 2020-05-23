@@ -25,6 +25,19 @@ If changing to a different TERRARIA_HOME simply change the part of the script th
 
         TERRARIA_HOME='/wd/terraria'
 
+## Script procedure
+1. File and permission checking
+1. Cleanup directories to help consistancy of each run
+1. Pull server zip file provided by terraria.org
+1. Unzip our new zip file, correct permissions
+1. Create copy and archive a copy our now old server files
+1. Perform archive file rotation (default 2)
+1. Prompt user to check that the server is not currently running the game. We would not want to delete files that are currently executing. That might be a bummer.
+    1. If user replys with not 'y' or 'Y', script terminates leaving it to the user to copy-paste the new files over.
+ 1. Remove all old server files in latest/ that are to be replaced
+ 1. Moves our new files that we staged into the latest/ directory
+ 1. Some cleanup
+ 
 ## Directory Tree
 ![directory tree](terraria_server_tree.GIF)
 
