@@ -25,5 +25,8 @@ If changing to a different TERRARIA_HOME simply change the part of the script th
 
         TERRARIA_HOME='/wd/terraria'
 
+## Directory Tree
+![directory tree](terraria_server_tree.GIF)
+
 ## Terraria official documentation
 https://terraria.gamepedia.com/Server
