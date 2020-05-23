@@ -14,11 +14,15 @@ As of v1.4.0.4 these values at the top of the script are accurate
     TERRARIA_URL='https://www.terraria.org/system/dedicated_servers/archives/000/000/038/original/terraria-server-1404.zip'
 
 ## Assumptions
-On my server I save all terraria related files here
+On my server I save all terraria related files here, that I call TERRARIA_HOME
     
     /wd/terraria/
 
 This is a secondary hard drive mounted on /wd 
+I assume the user has full permission (rwx) for this directory, or whatever directory they use.
+If changing to a different TERRARIA_HOME simply change the part of the script that looks like this
+
+        TERRARIA_HOME='/wd/terraria'
 
 ## Terraria official documentation
 https://terraria.gamepedia.com/Server
