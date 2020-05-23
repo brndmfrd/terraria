@@ -39,6 +39,10 @@ If changing to a different TERRARIA_HOME simply change the part of the script th
  1. Some cleanup
  
 ## Directory Tree
+Result of tree command
+        
+        me@mine:tree /wd/terraria
+        
 ![directory tree](terraria_server_tree.GIF)
 
 ## Terraria official documentation
