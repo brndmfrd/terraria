@@ -3,7 +3,8 @@
 ## Update Terraria Server
 The script updateTerrariaServer.sh is used to pull and rotate terraria servers as new versions are released.
 
-I do not know what the new versions are or what conventions might change so two values are kept at the top that are expected to be updated by the user before use.
+The URL, version numbers, file names, and directory structure are subject to change.
+To help this, two variables at the top of the script expected to be updated by the user before use.
 
 As of v1.4.0.4 these values at the top of the script are accurate
     
