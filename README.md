@@ -3,8 +3,8 @@
 ## Update Terraria Server
 The script updateTerrariaServer.sh is used to pull and rotate terraria servers as new versions are released.
 
-The URL, version numbers, file names, and directory structure of the unzipped server are subject to change.
-To help this, two variables at the top of the script expected to be updated by the user before use.
+The URL, version numbers, file names, and directory structure of the unzipped server are subject to change.  
+To help this, two variables at the top of the script are available and expected to be updated by the user before use.
 
 As of v1.4.0.4 these values at the top of the script are accurate
     
@@ -16,7 +16,7 @@ As of v1.4.0.4 these values at the top of the script are accurate
     TERRARIA_URL='https://www.terraria.org/system/dedicated_servers/archives/000/000/038/original/terraria-server-1404.zip'
 
 ## Assumptions
-On my server I save all terraria related files here, that I call TERRARIA_HOME
+On my server I save all terraria related files here, referred to in the script as TERRARIA_HOME.   
     
     /wd/terraria/
 
