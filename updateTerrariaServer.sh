@@ -147,7 +147,7 @@ echo -e "${LTCYAN}INFO${NC}: Begin archive of previous server files"
 TIMESTAMP=`date +%s`
 TERRARIA_ARCHIVE_FILE=$TIMESTAMP.tar.gz
 
-if [[ `ls $TERRARIA_LATEST | wc -l` > 0 ]]
+if [[ `ls $TERRARIA_LATEST | wc -l` -gt 0 ]]
 then
     cp -r $TERRARIA_LATEST /tmp/$TIMESTAMP
     [[ `tar czf $TERRARIA_ARCHIVE/$TERRARIA_ARCHIVE_FILE /tmp/$TIMESTAMP` ]] && rm -r /tmp/$TIMESTAMP
@@ -166,7 +166,7 @@ fi
 
 # Archive rotation
 
-if [[ `ls $TERRARIA_ARCHIVE | wc -l` > 2 ]]
+if [[ `ls $TERRARIA_ARCHIVE | wc -l` -gt 2 ]]
 then
     rm `ls -dt $TERRARIA_ARCHIVE/* | awk 'NR>2'`
 fi
@@ -193,11 +193,11 @@ echo -e "${LTCYAN}INFO${NC}: Removing all files inside $TERRARIA_LATEST"
 
 # Delete any old files in TERRARIA_LATEST if there are any
 
-if [[ `ls $TERRARIA_LATEST | wc -l` > 0 ]]
+if [[ `ls $TERRARIA_LATEST | wc -l` -gt 0 ]]
 then
     rm -r $TERRARIA_LATEST/*
 
-    if [[ `ls $TERRARIA_LATEST | wc -l` > 0 ]]
+    if [[ `ls $TERRARIA_LATEST | wc -l` -gt 0 ]]
     then
         echo -e "${RED}ERROR${NC}: Failed to delete old files from $TERRARIA_LATEST."
     fi
